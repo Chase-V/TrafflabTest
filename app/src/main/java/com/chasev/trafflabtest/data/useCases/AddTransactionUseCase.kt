@@ -1,10 +1,10 @@
-package com.chasev.trafflabtest.useCases
+package com.chasev.trafflabtest.data.useCases
 
-import com.chasev.trafflabtest.data.BudgetTransaction
-import com.chasev.trafflabtest.repository.TransactionRepository
+import com.chasev.trafflabtest.data.repository.BudgetTransaction
+import com.chasev.trafflabtest.data.repository.TransactionRepository
 import javax.inject.Inject
 
-class AddTransaction @Inject constructor(private val repository: TransactionRepository) {
+class AddTransactionUseCase @Inject constructor(private val repository: TransactionRepository) {
 
     suspend operator fun invoke(transaction: BudgetTransaction){
         if (transaction.amount <= 0){

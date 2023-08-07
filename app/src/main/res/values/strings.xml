@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">TrafflabTest</string>
+    <string name="add_transaction">Добавить транзакцию</string>
+    <string name="edit_transaction">Изменить транзакцию</string>
+    <string name="no_transactions_added">Здесь пока пусто</string>
+    <string name="deleteTransaction">Удалить транзакцию</string>
+    <string name="transaction_saving_error">При сохранении произошла ошибка.</string>
+    <string name="save_transaction">Сохранить транзакцию</string>
 </resources>
