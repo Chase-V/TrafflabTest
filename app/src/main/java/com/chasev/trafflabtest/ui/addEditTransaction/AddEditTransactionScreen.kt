@@ -1,8 +1,6 @@
 package com.chasev.trafflabtest.ui.addEditTransaction
 
-import android.os.Build
 import android.widget.Toast
-import androidx.annotation.RequiresApi
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -32,7 +30,6 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.chasev.trafflabtest.R
 import java.util.Date
 
-@RequiresApi(Build.VERSION_CODES.O)
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun AddEditTransactionScreen(

@@ -1,8 +1,6 @@
 package com.chasev.trafflabtest.navigation
 
 import android.app.Activity
-import android.os.Build
-import androidx.annotation.RequiresApi
 import androidx.compose.material3.DrawerState
 import androidx.compose.material3.DrawerValue
 import androidx.compose.material3.rememberDrawerState
@@ -27,7 +25,6 @@ import com.chasev.trafflabtest.ui.statisticsScreen.StatisticsScreen
 import com.chasev.trafflabtest.ui.transactionsList.TransactionsListScreen
 import kotlinx.coroutines.CoroutineScope
 
-@RequiresApi(Build.VERSION_CODES.O)
 @Composable
 fun AppNavGraph(
     modifier: Modifier = Modifier,

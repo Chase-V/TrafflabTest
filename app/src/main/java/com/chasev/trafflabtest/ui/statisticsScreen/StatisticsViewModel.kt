@@ -1,7 +1,5 @@
 package com.chasev.trafflabtest.ui.statisticsScreen
 
-import android.os.Build
-import androidx.annotation.RequiresApi
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.chasev.trafflabtest.data.repository.BudgetTransaction
@@ -18,7 +16,6 @@ import java.time.ZoneId
 import java.util.Date
 import javax.inject.Inject
 
-@RequiresApi(Build.VERSION_CODES.O)
 @HiltViewModel
 class StatisticsViewModel @Inject constructor(
     private val transactionsRepo: TransactionRepository
@@ -81,7 +78,6 @@ class StatisticsViewModel @Inject constructor(
     }
 }
 
-@RequiresApi(Build.VERSION_CODES.O)
 data class StatisticsUiState(
     val transactions: List<BudgetTransaction> = emptyList(),
     val income: Float = 0f,
